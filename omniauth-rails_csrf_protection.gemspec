@@ -8,16 +8,12 @@ Gem::Specification.new do |spec|
   spec.authors     = ["Cookpad Inc."]
   spec.email       = ["kaihatsu@cookpad.com"]
 
-  spec.summary     = <<~SUMMARY
-    Provides CSRF protection on OmniAuth request endpoint on Rails application.
-  SUMMARY
+  spec.summary     = "Provides CSRF protection on OmniAuth request endpoint on Rails application."
 
-  spec.description = <<~DESCRIPTION
-    This gem provides a mitigation against CVE-2015-9284 (Cross-Site Request
+  spec.description = "This gem provides a mitigation against CVE-2015-9284 (Cross-Site Request
     Forgery on the request phrase when using OmniAuth gem with a Ruby on Rails
     application) by implementing a CSRF token verifier that directly utilize
-    `ActionController::RequestForgeryProtection` code from Rails.
-  DESCRIPTION
+    `ActionController::RequestForgeryProtection` code from Rails."
 
   spec.homepage    = "https://github.com/cookpad/omniauth-rails_csrf_protection"
   spec.license     = "MIT"
